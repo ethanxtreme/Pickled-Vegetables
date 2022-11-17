@@ -13,3 +13,9 @@ This program keeps vegetable names and prices in a dictionary as key-value pairs
 The program can display a menu that lets the user see a list of all vegetables and their prices, add a new vegetable and price, change the price of an existing vegetable, and delete an existing vegetable and price. The program pickles the dictionary and saves it to a file when the user exits the program. Each time the program starts, it retrieves the dictionary from the file and unpickles it.
 
 Thiks is a menu driven program that uses the process of pickling in order to create or open a file to "pickle vegetables", the user is allowed to choose if they want to view the vegetables, which are then unpickled and printed into the console, add, change, or delete a vegatable. These options require vegetable pickling where they are dumped into a .txt file and the file is closed. 
+
+## `veggieFile.txt`
+This is the text file that the veggies are stored in
+- Written with 'wb'
+- b refers to binary mode — “write binary”. 
+- This means that the data will be written in the form of byte objects.
