@@ -52,7 +52,7 @@ instance of the dictionary. It will serve as a wrapper for `copyHelper`
 in a similar way we recursively copied a binary tree in class.  The only 
 difference is we have 26 children instead of two.  Here is a rough algorithm:
 
-```c++
+```py
 copyOther(const Dictionary& otherDict):
   Make this of the instance empty
   copy over the numWords from otherDict
