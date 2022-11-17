@@ -37,7 +37,7 @@ Below is an example of how the errors are handled from keys in the dicitonary:
 
 ```py
 key = input()
-if key not in ___:
+if key not in dictionaryName:
     while True:
         try:
             value = float(input())
@@ -46,7 +46,7 @@ if key not in ___:
             continue
         else:
             break
-        ___[key] = value
+        dictionaryName[key] = value
     else:
         print("key exists")
 ```
