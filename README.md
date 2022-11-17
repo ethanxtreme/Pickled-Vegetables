@@ -33,31 +33,22 @@ The open() function is used, but this time with 'rb' . The r refers to read, b r
 
 ## `Dictionary(const Dictionary& otherDict)`
 
-The copy constructor should copy all of the contents of `otherDict` to `this`. 
-You should use the `copyOther` function to accomplish this.
-
-> **Hint:** Be sure to refer to the BinaryDictionaryTree example.
-
-## `Dictionary& operator=(const Dictionary& otherDict)`
-
-This overload should copy all of the contents of `otherDict` to `this`.  You 
-should use the `copyOther` function to accomplish this.
-
-> **Hint:** Be sure to refer to the BinaryDictionaryTree example.
-
-## `copyOther(const Dictionary& otherDict)`
-
-This function should copy all of the values from `otherDict` to `this` 
-instance of the dictionary. It will serve as a wrapper for `copyHelper` 
-in a similar way we recursively copied a binary tree in class.  The only 
-difference is we have 26 children instead of two.  Here is a rough algorithm:
 
 ```py
-copyOther(const Dictionary& otherDict):
-  Make this of the instance empty
-  copy over the numWords from otherDict
-    
-  call copyHelper with the correct parameters
-     
-  return this instance
+    #adds a new vegetable
+    key = input("Enter a name for the new vegetable: ")
+    if key not in veggies:
+        while True:
+            try:
+                value = float(input("Enter a price for the new vegetable:$"))
+            except ValueError:
+                print("Sorry, I didn't understand that.")
+                continue
+            else:
+                #price was successfully parsed!
+                #we're ready to exit the loop.
+                break
+        veggies[key] = value
+    else:
+        print("That vegetables already exists!")
 ```
