@@ -20,16 +20,12 @@ The program can display a menu that lets the user see a list of all vegetables a
 
 Thiks is a menu driven program that uses the process of pickling in order to create or open a file to "pickle vegetables", the user is allowed to choose if they want to view the vegetables, which are then unpickled and printed into the console, add, change, or delete a vegatable. These options require vegetable pickling where they are dumped into a .txt file and the file is closed. 
 
-## `struct Node`
+## `pickle(veggies)`
 
-Your `Node` structure should contain an array of pointers.  The node can be 
-a struct or class. The size of the array should be NUM_CHARS (ie 26). The 
-struct/class should also contain a boolean flag called `isWord` to indicate 
-if the path to this node represents a word.
+The pickle function.
+This function imports the python pickle object, opens the file to write binary mode, and uses the dump function to dump the "veggies" into the file
+The file is then closed
 
-> **HINT:** You may want to consider having a default constructor for your 
-> node. This will decrease the amount of code you will need later.  You can 
-> create a default constructor for a struct the same way you would for a class.
 
 
 ## `Dictionary() Default Constructor` 
