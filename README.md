@@ -17,5 +17,5 @@ Thiks is a menu driven program that uses the process of pickling in order to cre
 ## `veggieFile.txt`
 This is the text file that the veggies are stored in
 - Written with 'wb'
-- b refers to binary mode — “write binary”. 
-- This means that the data will be written in the form of byte objects.
+- b refers to binary mode — “write binary”
+- This means that the data will be written in the form of byte objects
