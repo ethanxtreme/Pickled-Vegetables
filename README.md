@@ -31,8 +31,9 @@ The file is then closed
 The process of loading, unpickling, the pickled object back into a Python program. 
 The open() function is used, but this time with 'rb' . The r refers to read, b refers to binary mode — thus, the data is being deserialized from the byte stream,(read binary).
 
-## `Dictionary(const Dictionary& otherDict)`
-
+## `addVeg(veggies) and changeVeg(veggies)`
+Adding a new vegetable and price, or changing the price of an existing vegetable requires error handling for wrong inputs
+Below is an example of how the errors are handled from keys in the dicitonary:
 
 ```py
 key = input()
