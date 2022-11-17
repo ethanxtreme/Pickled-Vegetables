@@ -26,16 +26,10 @@ The pickle function.
 This function imports the python pickle object, opens the file to write binary mode, and uses the dump function to dump the "veggies" into the file
 The file is then closed
 
+## `unpickle()` 
 
-
-## `Dictionary() Default Constructor` 
-
-The default constructor should establish a root node and make each 
-position of the branch array null.  It should also set the root 
-isWord to false. The total number of words should be 0.
-
-> **Hint:** Having a default constructor for your node will reduce the code 
-> required for this function and other functions.
+The process of loading, unpickling, the pickled object back into a Python program. 
+The open() function is used, but this time with 'rb' . The r refers to read, b refers to binary mode — thus, the data is being deserialized from the byte stream,(read binary).
 
 ## `Dictionary(const Dictionary& otherDict)`
 
