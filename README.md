@@ -35,20 +35,17 @@ The open() function is used, but this time with 'rb' . The r refers to read, b r
 
 
 ```py
-    #adds a new vegetable
-    key = input("Enter a name for the new vegetable: ")
-    if key not in veggies:
-        while True:
-            try:
-                value = float(input("Enter a price for the new vegetable:$"))
-            except ValueError:
-                print("Sorry, I didn't understand that.")
-                continue
-            else:
-                #price was successfully parsed!
-                #we're ready to exit the loop.
-                break
-        veggies[key] = value
+key = input()
+if key not in ___:
+    while True:
+        try:
+            value = float(input())
+        except ValueError:
+            print("Your error message here")
+            continue
+        else:
+            break
+        ___[key] = value
     else:
-        print("That vegetables already exists!")
+        print("key exists")
 ```
